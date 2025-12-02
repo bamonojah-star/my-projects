@@ -1,7 +1,7 @@
-plugin: netbox.netbox.nb_inventory
+pplugin: netbox.netbox.nb_inventory
 
-api_endpoint: "http://192.168.5.16:4000/"
-token: "54a7101f391f65e34c23c39a05ac224351315fd3"
+api_endpoint: "http://192.168.5.16:4000/"      # <- Your real NetBox URL
+token: "54a7101f391f65e34c23c39a05ac224351315fd3"   # <- Your real API token
 
 validate_certs: false
 config_context: true
@@ -16,3 +16,10 @@ group_by:
   - sites
   - racks
   - tags
+
+query_filters: []
+
+device_query_filters:
+  - has_primary_ip: "true"
+
+flatten_custom_fields: true
