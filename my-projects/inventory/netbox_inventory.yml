@@ -1,0 +1,18 @@
+plugin: netbox.netbox.nb_inventory
+
+api_endpoint: "http://192.168.5.16:4000/"
+token: "54a7101f391f65e34c23c39a05ac224351315fd3"
+
+validate_certs: false
+config_context: true
+interfaces: true
+group_names_raw: true
+
+group_by:
+  - device_roles
+  - platforms
+  - device_types
+  - tenants
+  - sites
+  - racks
+  - tags
